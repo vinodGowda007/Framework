@@ -1,0 +1,105 @@
+Given UW Navigate To Salesforce Application
+-> done: LoginPageSteps.UWNavigateToSalesforceApplication() (0.7s)
+When UW enters the login credentials in single sign in to test Scenario8 using "Under Writer"
+sIeq!A5&
+Col Name: Under WriterRowNo: Scenario8RetrievedData Hyris Varas
+90
+User is + Hyris Varas
+CLICKED ON LOGIN BUTTON
+-> done: LoginPageSteps.WhenUWEntersTheLoginCredentialsInSingleSignInToTestScenarioUsing("Scenario8", "Under Writer") (14.8s)
+Then User log out from User and Login as Administrator
+-> done: AssumedInsurerSteps.ThenUserLogOutFromUserAndLoginAsAdministrator() (3.8s)
+Then User Navigated to the created submission 1.0 record for 'Validation' for the stage 'Quoted'
+SUBMISSION LINK IS  = System.String[]
+SUBMISSION LINK INDEX COUNT  = 2
+out put of 0 = 
+out put of 1 = 
+OUT PUT OF  0 = 
+OUT PUT OF  1 = 
+Submission URL  https://starrcompanies.lightning.force.com/lightning/r/Opportunity/0064W00001HKw0NQAT/view 
+-> done: SubmissionSteps.ThenUserNavigatedToTheCreatedSubmissionRecordForForTheStage("1.0", "Validation", "Quoted") (3.7s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.9s)
+Then User Reset the Record stage to 'Quoted'
+STAGE POSITION 0
+STAGE POSITION 2
+-> done: SubmissionSteps.ThenUserResetTheRecordStageTo("Quoted") (27.4s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Navigated to "Policy Info" Tab
+-> done: AssumedInsurerSteps.ThenUserNavigatedToTab("Policy Info") (4.4s)
+Then User Clicked on Click Here link to Add Assumed Insurers
+-> done: AssumedInsurerSteps.ThenUserClickedOnClickHereLinkToAddAssumedInsurers() (7.2s)
+Then User Selected the Assumed Insurer
+VALUE IS = System.String[]
+VALUE INDEX COUNT  = 2
+OUT PUT OF  0 = 
+OUT PUT OF  1 = 
+-> done: AssumedInsurerSteps.ThenUserSelectedTheAssumedInsurer() (22.0s)
+Then User Clicked on Save button in Add Assumed Insurer
+-> done: AssumedInsurerSteps.ThenUserClickedOnSaveButtonInAddAssumedInsurer() (0.7s)
+Then User selected the value in the dropdown
+-> done: AssumedInsurerSteps.ThenUserSelectedTheValueInTheDropdown() (5.9s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.9s)
+Then User Navigated to "Policy Info" Tab
+-> done: AssumedInsurerSteps.ThenUserNavigatedToTab("Policy Info") (4.3s)
+Then User Edit Assumed Carrier Branch field
+-> done: Edit_SubmissionSteps_1_0.ThenUserEditAssumedCarrierBranchField() (1.3s)
+Then User Updated 'RCC Code' field with value 'Blank'
+-> done: Edit_SubmissionSteps_1_0.ThenUserUpdatedFieldWithValue("RCC Code", "Blank") (3.2s)
+Then User Clicked on save submission in View edit mode
+-> done: Edit_SubmissionSteps_1_0.ThenUserClickedOnSaveSubmissionInViewEditMode() (3.6s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.5s)
+Given UW Navigate To Salesforce Application
+-> done: LoginPageSteps.UWNavigateToSalesforceApplication() (0.5s)
+Then User enter the "Under Writer" Username
+Col Name: Under WriterRowNo: Scenario8RetrievedData Hyris Varas
+90
+User is + Hyris Varas
+CLICKED ON LOGIN BUTTON
+-> done: LoginPageSteps.ThenUserEnterTheUsername("Under Writer") (11.0s)
+Then User Navigated to the created submission 1.0 record for 'Validation' for the stage 'Quoted'
+SUBMISSION LINK IS  = System.String[]
+SUBMISSION LINK INDEX COUNT  = 2
+out put of 0 = 
+out put of 1 = 
+OUT PUT OF  0 = 
+OUT PUT OF  1 = 
+Submission URL  https://starrcompanies.lightning.force.com/lightning/r/Opportunity/0064W00001HKw0NQAT/view 
+-> done: SubmissionSteps.ThenUserNavigatedToTheCreatedSubmissionRecordForForTheStage("1.0", "Validation", "Quoted") (4.0s)
+Then User capture the value of 'Starr EPI/GWP'
+-> done: SubmissionSteps.ThenUserCaptureTheValueOf("Starr EPI/GWP") (7.9s)
+Then User Clicked on "Edit" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("Edit") (2.3s)
+When User performed Stage progression from "Quoted" to "Bound"
+PICKLIST VALUE IS ALREADY SELECTED AS Atlanta
+-> done: SubmissionSteps.WhenUserPerformedStageProgressionFromTo("Quoted", "Bound") (12.0s)
+Then User Updated 'New York Free Trade Zone' field with values 'Random'
+-> done: SubmissionSteps.ThenUserUpdatedFieldWithValues("New York Free Tra...", "Random") (5.5s)
+Then User clicked on Save button during Edit Mode in Stage Progression for backtracking
+-> done: Edit_SubmissionSteps_1_0.ThenUserClickedOnSaveButtonDuringEditModeInStageProgressionForBacktracking() (0.2s)
+Then Verify the Error messages for Backtracking as "Assumed Carrier Branch & RCC code must be populated, please go to the Assumed Table via the CLICK HERE hyperlink on the saved submission screen (Policy Info Tab) and select an Assumed Carrier Branch & RCC code for each insurer."
+Length of Error message 1
+EXPECTED ERROR MESSAGE  - Assumed Carrier Branch & RCC code must be populated, please go to the Assumed Table via the CLICK HERE hyperlink on the saved submission screen (Policy Info Tab) and select an Assumed Carrier Branch & RCC code for each insurer.
+Displayed Error Message - Assumed Carrier Branch & RCC code must be populated, please go to the Assumed Table via the CLICK HERE hyperlink on the saved submission screen (Policy Info Tab) and select an Assumed Carrier Branch & RCC code for each insurer.
+-> done: SubmissionSteps.ThenVerifyTheErrorMessagesForBacktrackingAs("Assumed Carrier B...") (7.7s)
+Then User Clicked on Cancel button
+-> done: Edit_SubmissionSteps_1_0.ThenUserClickedOnCancelButton() (0.9s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Navigated to "Policy Info" Tab
+-> done: AssumedInsurerSteps.ThenUserNavigatedToTab("Policy Info") (4.4s)
+Then User Clicked on Click Here link to Add Assumed Insurers
+-> done: AssumedInsurerSteps.ThenUserClickedOnClickHereLinkToAddAssumedInsurers() (12.2s)
+Then User Selected the Assumed Insurer
+VALUE IS = System.String[]
+VALUE INDEX COUNT  = 2
+OUT PUT OF  0 = 
+OUT PUT OF  1 = 
+-> done: AssumedInsurerSteps.ThenUserSelectedTheAssumedInsurer() (22.6s)
+Then User Clicked on Save button in Add Assumed Insurer
+-> done: AssumedInsurerSteps.ThenUserClickedOnSaveButtonInAddAssumedInsurer() (0.7s)
+Then User selected the value in the dropdown
+-> done: AssumedInsurerSteps.ThenUserSelectedTheValueInTheDropdown() (2.4s)

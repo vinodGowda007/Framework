@@ -1,0 +1,369 @@
+Given UW Navigate To Salesforce Application
+-> done: LoginPageSteps.UWNavigateToSalesforceApplication() (1.0s)
+When UW enters the login credentials in single sign in to test Scenario1 using "Under Writer"
+sIeq!A5&
+Col Name: Under WriterRowNo: Scenario1RetrievedData Joe Cella
+90
+User is + Joe Cella
+CLICKED ON LOGIN BUTTON
+-> done: LoginPageSteps.WhenUWEntersTheLoginCredentialsInSingleSignInToTestScenarioUsing("Scenario1", "Under Writer") (14.9s)
+Then User Navigated to 'Clients' Page
+-> done: SubmissionSteps.ThenUserNavigatedToPage("Clients") (2.4s)
+Then User Clicked on "New" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("New") (2.1s)
+Then User Fill the data in Clients creation page using 'Submission1_0'
+Col Name: Client NameRowNo: Scenario1RetrievedData 3.0_test_standby_
+Col Name: Billing StreetRowNo: Scenario1RetrievedData Anderson Mill Road 12
+Col Name: Billing CityRowNo: Scenario1RetrievedData Austin
+Col Name: Billing ProvinceRowNo: Scenario1RetrievedData Texas
+Col Name: Billing Postal CodeRowNo: Scenario1RetrievedData 73344
+Col Name: Billing CountryRowNo: Scenario1RetrievedData United States
+Col Name: FEINTaxIdRowNo: Scenario1RetrievedData FT_
+Col Name: Scenario CountRowNo: Scenario1RetrievedData Scenario1
+Col Name: Client TypeRowNo: Scenario1RetrievedData Project
+------------------Not a Random Value----------------------------
+--None--
+Project
+Joint Venture
+Association
+Company
+Individual
+Contractor
+Project Name
+
+
+
+------------------Not a Random Value----------------------------
+--None--
+Afghanistan
+Aland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia, Plurinational State of
+Bonaire, Sint Eustatius and Saba
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+Brunei Darussalam
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Congo, the Democratic Republic of the
+Cook Islands
+Costa Rica
+Cote d'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czechia
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Eswatini
+Ethiopia
+Falkland Islands (Malvinas)
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Holy See (Vatican City State)
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran, Islamic Republic of
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Korea, Democratic People's Republic of
+Korea, Republic of
+Kuwait
+Kyrgyzstan
+Lao People's Democratic Republic
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macao
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia, Federated States Of
+Moldova, Republic of
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+Northern Mariana Islands
+North Macedonia
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn
+Poland
+Portugal
+Puerto Rico
+Qatar
+Republic of Kosovo
+Reunion
+Romania
+Russian Federation
+Rwanda
+Saint Barthélemy
+Saint Helena, Ascension and Tristan da Cunha
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin (French part)
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten (Dutch part)
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Sweden
+Switzerland
+Syrian Arab Republic
+Taiwan
+Tajikistan
+Tanzania, United Republic of
+Thailand
+Timor-Leste
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Türkiye
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------Not a Random Value----------------------------
+--None--
+Alabama
+Alaska
+Arizona
+Arkansas
+California
+Colorado
+Connecticut
+Delaware
+District of Columbia
+Florida
+Georgia
+Hawaii
+Idaho
+Illinois
+Indiana
+Iowa
+Kansas
+Kentucky
+Louisiana
+Maine
+Maryland
+Massachusetts
+Michigan
+Minnesota
+Mississippi
+Missouri
+Montana
+Nebraska
+Nevada
+New Hampshire
+New Jersey
+New Mexico
+New York
+North Carolina
+North Dakota
+Ohio
+Oklahoma
+Oregon
+Pennsylvania
+Puerto Rico
+Rhode Island
+South Carolina
+South Dakota
+Tennessee
+Texas
+
+
+
+
+
+
+
+
+-> done: ClientPageSteps.WhenUserFillTheDataInClientsCreationPageUsing("Submission1_0") (14.9s)
+Then User clicked on Save button
+-> done: ClientPageSteps.ThenUserClickedOnSaveButton() (8.9s)
+Then New Client record is created successfully
+-> done: ClientPageSteps.ThenNewClientRecordIsCreatedSuccessfully() (0.2s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Clicked on "Edit" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("Edit") (2.3s)
+Then User will update the fields in the client detail page
+Col Name: FEINTaxIdRowNo: Scenario1RetrievedData FT_
+-> done: ClientPageSteps.ThenUserWillUpdateTheFieldsInTheClientDetailPage() (1.0s)
+And User clicked on Save button
+-> done: ClientPageSteps.ThenUserClickedOnSaveButton() (11.2s)
+Then Client record Updated successfully.
+-> done: ClientPageSteps.ThenClientRecordUpdatedSuccessfully_() (0.0s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Clicked on "ICE Check" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("ICE Check") (2.2s)
+Then User clicked on Refresh button in Submission page
+-> done: SubmissionSteps.ThenUserClickedOnRefreshButtonInSubmissionPage() (7.4s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Verify Ice check status is updated in the clients details page.
+-> done: IceCheckSteps.ThenUserVerifyIceCheckStatusIsUpdatedInTheClientsDetailsPage_() (0.4s)

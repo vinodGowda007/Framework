@@ -1,0 +1,93 @@
+Given UW Navigate To Salesforce Application
+-> done: LoginPageSteps.UWNavigateToSalesforceApplication() (1.0s)
+When UW enters the login credentials in single sign in to test Scenario15 using "Under Writer"
+sIeq!A5&
+Col Name: Under WriterRowNo: Scenario15RetrievedData Suyeon Youn
+90
+User is + Suyeon Youn
+CLICKED ON LOGIN BUTTON
+-> done: LoginPageSteps.WhenUWEntersTheLoginCredentialsInSingleSignInToTestScenarioUsing("Scenario15", "Under Writer") (14.7s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Navigated to 'Submissions' Page
+-> done: SubmissionSteps.ThenUserNavigatedToPage("Submissions") (2.3s)
+Then User Clicked on "New" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("New") (2.1s)
+Then User selected the record type as "Record Type 1.0"
+Col Name: Record Type 1.0RowNo: Scenario15RetrievedData SCI - Financial Lines
+SELECTED THE RECORD TYPE SCI - Financial Lines
+-> done: SubmissionSteps.ThenUserSelectedTheRecordTypeAs("Record Type 1.0") (0.8s)
+Then User fill the data in Submission version one creation record for 'Assumed'
+Col Name: StageRowNo: Scenario15RetrievedData Prospect
+Col Name: Production OfficeRowNo: Scenario15RetrievedData Atlanta
+Col Name: Issuing CompanyRowNo: Scenario15RetrievedData CVS 1919
+Col Name: Line of BusinessRowNo: Scenario15RetrievedData Accountants
+Col Name: Subclass1RowNo: Scenario15RetrievedData NON-MAJOR
+Col Name: Issuing OfficeRowNo: Scenario15RetrievedData Atlanta
+Col Name: UW RegionRowNo: Scenario15RetrievedData North America
+Col Name: Date FormatRowNo: Scenario15RetrievedData MMM dd, yyyy
+Col Name: OccupancyRowNo: Scenario15RetrievedData Accountant
+Col Name: Shell PolicyRowNo: Scenario15RetrievedData Yes
+Col Name: AffiliatedRowNo: Scenario15RetrievedData Yes
+Col Name: Policy NumberRowNo: Scenario15RetrievedData Manual
+Col Name: Submission CurrencyRowNo: Scenario15RetrievedData USD - U.S. Dollar
+Col Name: Licensed ProducerRowNo: Scenario15RetrievedData LOCKTON ARGENTINA
+Col Name: ProgramRowNo: Scenario15RetrievedData Random
+Col Name: Carrier BranchRowNo: Scenario15RetrievedData Random
+Col Name: Underwriting Credit BranchRowNo: Scenario15RetrievedData Atlanta
+Col Name: Profit CenterRowNo: Scenario15RetrievedData Random
+VALUE IS = System.String[]
+VALUE INDEX COUNT  = 2
+OUT PUT OF  0 = 
+OUT PUT OF  1 = 
+PICKLIST VALUE IS ALREADY SELECTED AS USD - U.S. Dollar
+ PICKLIST IS DISABLED COULD NOT INPUT VALUES IN THE FIELD  *Subclass 2
+Jul 11, 2022
+Jul 11, 2023
+VALUE IS = System.String[]
+VALUE INDEX COUNT  = 2
+OUT PUT OF  0 = 
+OUT PUT OF  1 = 
+SUCCESSFULLY FILLED THE VALUES IN 1.0 SUBMISSION CREATION PAGE
+-> done: SubmissionSteps.ThenUserFillTheDataInSubmissionVersionOneCreationRecordFor("Assumed") (115.1s)
+Then User clicked on Save button in submission page
+CLICKED ON THE SAVE SUBMISSION BUTTON
+CLICKED ON SAVE BUTTON TO SAVE THE SUBMISSION
+-> done: SubmissionSteps.ThenUserClickedOnSaveButtonInSubmissionPage() (10.5s)
+Then User verify the created submission record for 'Validation' for 'Quoted' Stage
+SUCCESSFULLY CREATED THE SUBMISSION AND SUBMISSSION NAME = FL-AT-071123-3519990
+-> done: SubmissionSteps.ThenUserVerifyTheCreatedSubmissionRecordForForStage("Validation", "Quoted") (1.8s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User verify the Ice Check status 'Before' performing Ice Check action
+-> done: SubmissionSteps.ThenUserVerifyTheIceCheckStatusPerformingIceCheckAction("Before") (2.7s)
+Then User Clicked on "Ice Check" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("Ice Check") (2.2s)
+Then User clicked on Refresh button in Submission page
+-> done: SubmissionSteps.ThenUserClickedOnRefreshButtonInSubmissionPage() (16.4s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User verify the Ice Check status 'After' performing Ice Check action
+-> done: SubmissionSteps.ThenUserVerifyTheIceCheckStatusPerformingIceCheckAction("After") (1.6s)
+Then User Clicked on "License Check" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("License Check") (2.2s)
+Then Clicked on Close button during Licence Check
+-> done: SubmissionSteps.ThenClickedOnCloseButtonDuringLicenceCheck() (6.8s)
+Then Verify Licence Check status is updated for 'Submission1_0'
+-> done: SubmissionSteps.ThenVerifyLicenceCheckStatusIsUpdatedFor("Submission1_0") (2.4s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Navigated to "Policy Info" Tab
+-> done: AssumedInsurerSteps.ThenUserNavigatedToTab("Policy Info") (4.3s)
+Then User Clicked on Click Here link to Add Assumed Insurers
+-> done: AssumedInsurerSteps.ThenUserClickedOnClickHereLinkToAddAssumedInsurers() (5.9s)
+Then User Selected the Assumed Insurer
+VALUE IS = System.String[]
+VALUE INDEX COUNT  = 2
+OUT PUT OF  0 = 
+OUT PUT OF  1 = 
+-> done: AssumedInsurerSteps.ThenUserSelectedTheAssumedInsurer() (4.4s)
+Then User Clicked on Save button in Add Assumed Insurer
+-> done: AssumedInsurerSteps.ThenUserClickedOnSaveButtonInAddAssumedInsurer() (0.8s)
+Then User selected the value in the dropdown
+-> done: AssumedInsurerSteps.ThenUserSelectedTheValueInTheDropdown() (6.4s)

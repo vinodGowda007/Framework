@@ -1,0 +1,67 @@
+Given UW Navigate To Salesforce Application
+-> done: LoginPageSteps.UWNavigateToSalesforceApplication() (0.9s)
+When UW enters the login credentials in single sign in to test Scenario8 using "Under Writer"
+sIeq!A5&
+Col Name: Under WriterRowNo: Scenario8RetrievedData Hyris Varas
+90
+User is + Hyris Varas
+CLICKED ON LOGIN BUTTON
+-> done: LoginPageSteps.WhenUWEntersTheLoginCredentialsInSingleSignInToTestScenarioUsing("Scenario8", "Under Writer") (15.3s)
+Then User Navigated to the created submission 1.0 record for 'Validation' for the stage 'Quoted'
+SUBMISSION LINK IS  = System.String[]
+SUBMISSION LINK INDEX COUNT  = 2
+out put of 0 = 
+out put of 1 = 
+OUT PUT OF  0 = 
+OUT PUT OF  1 = 
+Submission URL  https://starrcompanies.lightning.force.com/lightning/r/Opportunity/0064W00001HKw0NQAT/view 
+-> done: SubmissionSteps.ThenUserNavigatedToTheCreatedSubmissionRecordForForTheStage("1.0", "Validation", "Quoted") (3.7s)
+Then User Reset the Record stage to 'Prospect'
+STAGE POSITION 2
+STAGE POSITION 0
+-> done: SubmissionSteps.ThenUserResetTheRecordStageTo("Prospect") (30.7s)
+Then User Selected the Stage as 'Working' from View Mode and Clicked on Mark as current stage button
+-> done: SubmissionSteps.ThenUserSelectedTheStageAsFromViewModeAndClickedOnMarkAsCurrentStageButton("Working") (14.3s)
+Then User Verified submission record status changed to "Working"
+-> done: SubmissionSteps.ThenUserVerifiedSubmissionRecordStatusChangedTo("Working") (6.2s)
+Then User Selected the Stage as 'Quoted' from View Mode and Clicked on Mark as current stage button
+-> done: SubmissionSteps.ThenUserSelectedTheStageAsFromViewModeAndClickedOnMarkAsCurrentStageButton("Quoted") (13.1s)
+Then User Verified submission record status changed to "Quoted"
+-> done: SubmissionSteps.ThenUserVerifiedSubmissionRecordStatusChangedTo("Quoted") (6.2s)
+Then User Clicked on "Edit" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("Edit") (2.3s)
+When User performed Stage progression from "Quoted" to "Lost/NTU"
+-> done: SubmissionSteps.WhenUserPerformedStageProgressionFromTo("Quoted", "Lost/NTU") (6.3s)
+Then User Update the Declined Reason in the submission
+-> done: SubmissionSteps.ThenUserUpdateTheDeclinedReasonInTheSubmission() (0.8s)
+Then User clicked on Save button in submission page
+CLICKED ON THE SAVE SUBMISSION BUTTON
+CLICKED ON SAVE BUTTON TO SAVE THE SUBMISSION
+-> done: SubmissionSteps.ThenUserClickedOnSaveButtonInSubmissionPage() (13.8s)
+Then User Verified submission record status changed to "Lost/NTU"
+-> done: SubmissionSteps.ThenUserVerifiedSubmissionRecordStatusChangedTo("Lost/NTU") (6.2s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Clicked on "New Endorsements" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("New Endorsements") (4.7s)
+Then Verify the Error messages "Endorsement can be created on a Bound Submission only"
+EXPECTED ERROR MESSAGE IS DISPLAYED  AND THE ERROR MESSAGE IS = Endorsement can be created on a Bound Submission only
+-> done: TerrorismSteps.ThenVerifyTheErrorMessages("Endorsement can b...") (0.9s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Clicked on "Edit" button
+-> done: SubmissionSteps.ThenUserClickedOnButton("Edit") (2.2s)
+When User performed Stage progression from "Lost/NTU" to "Quoted"
+-> done: SubmissionSteps.WhenUserPerformedStageProgressionFromTo("Lost/NTU", "Quoted") (6.4s)
+Then User clicked on Save button in submission page
+CLICKED ON THE SAVE SUBMISSION BUTTON
+CLICKED ON SAVE BUTTON TO SAVE THE SUBMISSION
+-> done: SubmissionSteps.ThenUserClickedOnSaveButtonInSubmissionPage() (17.6s)
+Then User Verified submission record status changed to "Quoted"
+-> done: SubmissionSteps.ThenUserVerifiedSubmissionRecordStatusChangedTo("Quoted") (6.2s)
+Then User Refresh the page
+-> done: AssumedInsurerSteps.ThenUserRefreshThePage() (5.0s)
+Then User Reset the Record stage to 'Prospect'
+STAGE POSITION 2
+STAGE POSITION 0
+-> done: SubmissionSteps.ThenUserResetTheRecordStageTo("Prospect") (28.9s)

@@ -1,0 +1,41 @@
+{
+  "testRunSettings": {
+
+
+
+    // Staging URL
+    "AUT": "https://starrcompanies--staging.sandbox.lightning.force.com/lightning/setup/SetupOneHome/home",
+
+    // Stand By URL
+    //"AUT": "https://starrcompanies--sf20standb.sandbox.lightning.force.com/lightning/setup/SetupOneHome/home",
+
+    // Production URL
+    //"AUT": "https://starrcompanies.lightning.force.com/lightning/setup/SetupOneHome/home",
+
+    "AUT_NonSSO": "",
+
+ 
+    //"Staging" "Credentials",
+    "AUT_UserName": "Georgian.Thomas@starrcompanies.com.staging",
+    "AUT_Password": "UUFzdGFnaW5nQDEyMw==",
+    //"AUT_Password": "o&z6nvH$",
+
+    //"Stand By": "CREDENTIALS",
+    //"AUT_UserName": "georgian.thomas@starrcompanies.com.standbsf20",
+    ////"AUT_Password": "StandbyorgTest@123",
+    //"AUT_Password": "U3RhbmRieW9yZ1Rlc3RAMTIz",
+
+
+    "Browser": "Chrome",
+    "TestType": "SmokeTest",
+    "IsLog": "Y",
+
+    //"LogPath": "C:\\SF_Automation\\SeleniumAutoFramework\\SalesForce3\\Reports\\",
+    "BuildName": "UAT",
+    "IsReport": "Y",
+    "Technology": "SeleniumBDD",
+    //"ExtentReportsDirPath": "C:\\SF_Automation\\SeleniumAutoFramework\\SalesForce3\\Reports\\",
+    "Environment": "uat",
+    "WaitTime": "90"
+  }
+}

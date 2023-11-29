@@ -1,0 +1,604 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Remove="Features\Validation_1_0\01_Prospect and Working\B_A23_License_Number_is_Required.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Password Encrypter\PasswordEncryter.feature.cs" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+	  <PackageReference Include="ExtentReports" Version="4.1.0" />
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+	  <PackageReference Include="NUnit" Version="3.13.3" />
+	  <PackageReference Include="NUnit.ConsoleRunner" Version="3.15.2" />
+	  <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+	  <PackageReference Include="SpecFlow" Version="3.9.74" />
+	  <PackageReference Include="SpecFlow.Assist.Dynamic" Version="1.4.2" />
+	  <PackageReference Include="SpecFlow.NUnit" Version="3.9.74" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SeleniumAutoFramework\SeleniumAutoFramework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Features\Validation_1_0\01_Prospect and Working\B_A23_License_Number_is_Required.feature.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Password Encrypter\PasswordEncryter.feature.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+ 
+
+  <ItemGroup>
+    <None Update="Data\EncryptPassword\EncryptPassword.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\20QC03_PackageDO_EPL_FID.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\20QC03_PackageDO_InclusiveEPL.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SFCloneSubmission1.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SFCloneSubmission3.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\SFCloneSubmission4.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\00_PreConditions\00_ResetDataSet.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\00_PreConditions\01_Clients_1_0.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\00_PreConditions\02_AssumedInsurer_1_0.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\00_PreConditions\03_Contacts_1_0.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\01_CreateSubmissions.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A02_External_FAC_Reinsurance_Reqd_Fields.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A100_Policy_Number_to_be_Alpha_Numeric.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A107_Assumed_RI_Contract_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A109_Check_All_Mandatory_Fields.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A110_Forecast_FAC_RI_PRM_Is_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A112_InValidStage_Camilion_IssueDate.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A114_New_SGS_Onshore_Int_Onshore_Req.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A115_LOB_Occ_NID_Camilion_Crt_date.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A124_Underwriting_Credit_Branch.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A126_TotalSharePercentage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A128_FAC_RI_PRM_UCB_Pol_Ced_Comm_UCB.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A132_Purchase_Ext_UCCB_No.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A143_SCI_Subclass1_required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A144_SCIGLMisc_Subclass1_required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A145_SCIFinanciaLines_Subclass1_required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A146_InvalidSCI_LOB_Office_Combination.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A148_Office_Should_be_In_Canada.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A152_Assumed_carrier_Not_Populated.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A154_All_Mining_validation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A155AssumedInsurerAssumedCarrierBranch.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A166_TRIA_Starr_Cert_Req.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A168_ProducerContact.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A16_Validate_Locked_Fields_StageWorking.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A173_MiddleMarket.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A19_MAS_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A28_NYFTZ_Class_Code_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A38_SM_Commission_Pct_Vldtn_Quote_Stage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A41_Producer_Validation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A43_ST_Assigned_UW_from_ST.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A50_ST_Create_New_Submission.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A59_GLBL_StageWorking_LockClient.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A67_STNA_Effective_Date_Validation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\A86_GLBL_ReqdIssuingCompany_QuotedBound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\01_Prospect and Working\B_A23_License_Number_is_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\01_Validation_1_0.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A06_Bound_Renewal_Requirements - Copy.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A142_Starr_TRIA_Non_Cert_Req.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A46_ST_Bound_Stage_Valid_part3.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A23_License_Number_is_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A131_Affliated_Parent_Child_Validation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A06_Bound_Renewal_Requirements.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A54_ST_Renewal_Check_Expiring_Policy.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A108_Bound_Date_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A63_ST_User_MayNot_Modify_EndorseRenew.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A64_ST_User_MayNot_Modify_Field_Section.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A113_Extension_Expiry_Date.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A92_Lock_Child_Subm_Fields.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A26_Match_Policy_Number_for_Endorsements.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A49_ST_Create_New_Endorsements.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A24_Lock_Subm_fields_from_Editing - Copy.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A55_ST_Stage_Check_Endorsement.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\01_CreateSubmissions.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A03_Choose_Carrier_Branch.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A04_Submission_Comments_cannot_be_Blank.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A103_Quoted_Reached_Cannot_Change_Field.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A104_Starr_EPIGWP_Equal_FAC_GrossPremium.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A121_UDX_Currency_Required_Currency_USD.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A12_EstSignedShareRangeValidation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A135_ProducerComissionPercent.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A14_Forecast_Premium_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A152_Assumed_carrier_Not_Populated.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A27_NYFreeZone_Required_StageBound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A36_Restrict_SectionTerrorism_Non_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A49_ST_Create_New_Endorsements.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A65_ST_Validate_Locked_Fields_Quoted.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A68_WrittenShareReqWhenQuotedOrBound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A70_GLBL_Endorsement_Parent_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted\A89_GLBL_ReqdNonRenewable_QuotedBound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\01_CreateSubmissions.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A01_Policy_No_Assignmnt_Type_ReqOn_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A05_Bound_Reached_Cannot_Change_Fields.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A07_Cannot_Change_from_End_to_New.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A100_Policy_Num_NID_to_b_Alpha_Numeric.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A101_Amount_to_be_Zero_or_Negative.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A102_Require_Buenos_Aires_Fields.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A104_Starr_EPIGWP_Equal_FAC_GrossPremium.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A105_Invalid_Office.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A108_Bound_Date_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A111_Update_Type_To_Renewal_Admin.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A113_Extension_Expiry_Date.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A123_Production_Office_Share_Percentage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A125_UCB_Share_Percentage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A127_Purchase_External_FAC_UCB.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A130_Shell_policy_Affliated_SGS.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A131_Affliated_Parent_Child_Validation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A136_Local_Pol_Num_Curr_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A137_Local_Pol_Num_Curr_Cant_be_Modified.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A138_Local_Country_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A139_Cancelled_Stage_Cannot_be_Modified.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A13_FAC_Resinsurance_is_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A141_TRIA_Non_Cert_Req.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A142_Starr_TRIA_Non_Cert_Req.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A149_Local_Client_Name_Cannot_Be_Changed.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A153_Old_office_update.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A155AssumedInsurerAssumedCarrierBranch.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A162_Endorsement_Ref.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A169_latestpicklistvalues_LOB.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A170_Broker_email.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A23_License_Number_is_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A24_Lock_Subm_fields_from_Editing.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A26_Match_Policy_Number_for_Endorsements.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A30_PML_Req_On_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A33_Proj_Name_Check_On_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A35_Restrict_Fields_on_Bound_Stage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A44_ST_Bound_Stage_Valid_part1.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A46_ST_Bound_Stage_Valid_part3.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A48_ST_Clearance_Indicator_Check.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A54_ST_Renewal_Check_Expiring_Policy.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A55_ST_Stage_Check_Endorsement.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A62_ST_Update_Bound_Submissions.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A63_ST_User_MayNot_Modify_EndorseRenew.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A64_ST_User_MayNot_Modify_Field_Section.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A71_GLBL_Endorsmnt_Client_Matches_Parent.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A74_TIV_Req_On_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A86_GLBL_ReqdIssuingCompany_QuotedBound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A92_Lock_Child_Subm_Fields.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A93_Invalid_Sales_Stage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A95_Incumbent_Insurer_Required_In_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\A99_Require_Santiago_Fields.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\03_Bound\B_A111_Update_Type_To_Renewal_Admin.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\04_Renewal\01_CreateSubmissions.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\04_Renewal\A120_SCI_Renewal_LOB_OCC_Cannot_Update.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\04_Renewal\A63_ST_User_MayNot_Modify_EndorseRenew.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\04_Renewal\A45_ST_Bound_Stage_Valid_part2.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\04_Renewal\A06_Bound_Renewal_Requirements.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A93_Invalid_Sales_Stage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A07_Cannot_Change_from_End_to_New.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A24_Lock_Subm_fields_from_Editing.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A95_Incumbent_Insurer_Required_In_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A137_Local_Pol_Num_Curr_Cant_be_Modified.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A123_Production_Office_Share_Percentage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A100_Policy_Number_to_be_Alpha_Numeric.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A125_UCB_Share_Percentage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A33_Proj_Name_Check_On_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A03_Choose_Carrier_Branch.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A30_PML_Req_On_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A05_Bound_Reached_Cannot_Change_Fields.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A103_Quoted_Reached_Cannot_Change_Field.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A104_Starr_EPIGWP_Equal_FAC_GrossPremium.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A121_UDX_Currency_Required_Currency_USD.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A12_EstSignedShareRangeValidation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A130_Shell_policy_Affliated_SGS.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A135_ProducerComissionPercent.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A136_Local_Pol_Num_Curr_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A139_Cancelled_Stage_Cannot_be_Modified.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A13_FAC_Resinsurance_is_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A14_Forecast_Premium_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A62_ST_Update_Bound_Submissions.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A74_TIV_Req_On_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A48_ST_Clearance_Indicator_Check.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A65_ST_Validate_Locked_Fields_Quoted.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A68_WrittenShareReqWhenQuotedOrBound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A01_Policy_No_Assignmnt_Type_ReqOn_Bound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A86_GLBL_ReqdIssuingCompany_QuotedBound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A35_Restrict_Fields_on_Bound_Stage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A138_Local_Country_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A127_Purchase_External_FAC_UCB.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\02_Quoted and Bound\A89_GLBL_ReqdNonRenewable_QuotedBound.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\05_Account\Billing_Address_is_Required.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\05_Account\Valid_Canada_Billing_Zip_Code.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\05_Account\Valid_US_Billing_Zip_Code.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\06_Treaty Year Table\Treaty_St_Dt_cannot_be_greater_end_dt.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\07_Chile Manual Policy Number Log\Policy_Number_Active.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\07_Chile Manual Policy Number Log\Provide_Valid_Email_Id.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\07_Chile Manual Policy Number Log\Required_Fields_for_Active_Stage.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\08_Incumbent Insurer\A01_Incumbent_Insurer_Share_RangeValidat.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Validation_1_0\08_Incumbent Insurer\A02_Choose_either_Insured_Name_or_Other.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>  
+    <None Update="GlobalConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+     <SpecFlowFeatureFiles Update="Features\Validation_1_0\01_Prospect and Working\B_A23_License_Number_is_Required.feature">
+       <Visible>$(UsingMicrosoftNETSdk)</Visible>
+       <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+     </SpecFlowFeatureFiles>
+     <SpecFlowFeatureFiles Update="Password Encrypter\PasswordEncryter.feature">
+       <Visible>$(UsingMicrosoftNETSdk)</Visible>
+       <CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+     </SpecFlowFeatureFiles>
+    </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\DataSet\Clients1_0\" />
+    <Folder Include="Data\DataSet\Clone\" />
+    <Folder Include="Data\DataSet\Contacts\" />
+    <Folder Include="Data\DataSet\Endorsement\" />
+    <Folder Include="Data\DataSet\Renewal1_0\" />
+    <Folder Include="Data\DataSet\Section\" />
+    <Folder Include="Data\DataSet\Sub1_0_Validation\" />
+    <Folder Include="Data\DataSet\Terrorism\" />
+    <Folder Include="Data\Validation_1_0\00_PreConditions\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+
+</Project>
